@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dictionary App</title>
+  <link rel="stylesheet" href="./pages/dictionary.css">
+</head>
+<body>
+
+  <!-- Container for the app -->
+  <div class="container">
+    <h1>Dictionary Lookup</h1>
+
+    <!-- Input form for word lookup -->
+    <form id="dictionaryForm">
+      <input type="text" id="wordInput" placeholder="Enter a word..." required>
+      <button type="submit">Search</button>
+    </form>
+
+    <!-- Display area for the word's meaning -->
+    <div id="wordDetails">
+      <!-- Word -->
+      <h2 id="wordTitle"></h2>
+
+      <!-- Phonetics -->
+      <p id="phonetics"></p>
+
+      <!-- Definition -->
+      <div id="definition"></div>
+    </div>
+
+    <!-- Error message area -->
+    <p id="errorMessage"></p>
+  </div>
+
+  <script src="./scripts/dictionary.js"></script>
+</body>
+</html>
